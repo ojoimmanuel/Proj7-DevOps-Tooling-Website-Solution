@@ -212,7 +212,7 @@ sudo vi /etc/fstab
 **Note 1:** Do not forget to open TCP port 80 on the Web Server.
 
 **Note 2:** If you encounter 403 Error – check permissions to your `/var/www/html` folder and also disable SELinux `sudo setenforce 0`
-To make this change permanent – open following config file `sudo vi /etc/sysconfig/selinux` and set `SELINUX=disabled` then restrt httpd.
+To make this change permanent – open following config file `sudo vi /etc/sysconfig/selinux` and set `SELINUX=disabled` then restrt httpd `sudo systemctl restart httpd`.
 
 ![seten](./images/10-setenforce.PNG)   
 
